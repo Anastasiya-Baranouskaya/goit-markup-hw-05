@@ -19,9 +19,21 @@
             <nav class="navigation link">
                 <a href="./index.html" class="logo" lang="en"> <span class="logo-web ">Web</span>Studio</a>
                 <ul class="list link">
-                    <li class="link-item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="link-item"><a href="./html/portfolio.html" class="link">Портфолио</a></li>
-                    <li class="link-item"><a href="" class="link">Контакты</a></li>
+                    <li class="link-item">
+                        
+                            <a href="./index.html" class="link">Студия</a>
+                        
+                    </li>
+                    <li class="link-item">
+                        
+                            <a href="./html/portfolio.html" class="link">Портфолио</a>
+                        
+                    </li>
+                    <li class="link-item">
+                        
+                            <a href="" class="link">Контакты</a>
+                       
+                    </li>
                 </ul>
             </nav>
             <ul class="list link">
@@ -52,7 +64,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="button-primery button-cursor"> Заказать услугу</button>
+                <button type="button" class="button-primery button-cursor" data-open-modal> Заказать услугу</button>
             </div>
         </section>
         <!--Раздел качеств-->
@@ -91,20 +103,27 @@
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="site-title">
                         <li class="list-img">
-                            <div class="position-div">
-                                <a href=""><img src="./images/програмирование.jpg" alt="програмирование" width="370" />
+                            <a href="" class="position-link">
+                                <img src="./images/програмирование.jpg" alt="програмирование" width="370" />
+                                <div class="position-div">
                                     <p class="list-position">Десктопные приложения</p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="list-img">
-                            <a href=""><img src="./images/приложения.jpg" alt="приложения" width="370" />
-                                <p class="list-position">Мобильные приложения</p>
+                                </div>
                             </a>
                         </li>
                         <li class="list-img">
-                            <a href=""><img src="./images/цветовая-гамма.jpg" alt="цветовая-гамма" width="370" />
-                                <p class="list-position">Дизайнерские решения</p>
+                            <a href="" class="position-link">
+                                <img src="./images/приложения.jpg" alt="приложения" width="370" />
+                                <div class="position-div">
+                                    <p class="list-position">Мобильные приложения</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-img">
+                            <a href="" class="position-link">
+                                <img src="./images/цветовая-гамма.jpg" alt="цветовая-гамма" width="370" />
+                                <div class="position-div">
+                                    <p class="list-position">Дизайнерские решения</p>
+                                </div>
                             </a>
                         </li>
                     </ul>
@@ -311,7 +330,7 @@
                        </li>
                        <li class="list-clients">
                            <a href="" class="clients-section-link" target="_blank" rel="noopener noreferrer">
-                               <svg class="icon" width="88pxx" height="45px">
+                               <svg class="icon" width="88px" height="45px">
                                    <use href="./images/icons.svg#logo-6"></use>
                                </svg>
                            </a>
@@ -370,7 +389,19 @@
             </div>
         </div>
     </footer>
-    
+    <!-- модальное окно -->
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+            <button type="button" class="modal-button" data-close-modal>
+                <svg class="icon-modal" >
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+            
+        </div>
+
+        <script src="./js/modal.js"></script>        
+    </div>
 </body>
 </html>
 
